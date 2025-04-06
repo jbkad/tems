@@ -46,7 +46,7 @@ function Navbar() {
             </Link> */}
             <a
               className="menu-item"
-              href="https://mdby.co/collections/tems?fbclid=PAZXh0bgNhZW0CMTEAAaaz12aivaq6cyHOrcTDPHwXYOkpDNK2aKAbaDTmFy5pn2hAG58xR-Yi6lE_aem_4xHbi7Pd1_zMmg3lidjF4g"
+              href="https://www.amazon.com/stores/page/12191104-3E04-4AA5-A248-41B6E7FF0BD0?channel=AMMerch_Tems_RCA"
               target="blank"
               rel="noopener noreferrer"
             >
