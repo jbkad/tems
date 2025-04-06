@@ -1,0 +1,57 @@
+@import "stylesheet.scss";
+
+.home {
+  color: white;
+  text-align: center;
+  margin: 0 50px;
+
+  .hero {
+    video {
+      width: 100%;
+      height: 90vh;
+      border: none;
+      overflow: hidden;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+  .home {
+    // min-height: 45vh;
+
+    .hero {
+      .hero-container {
+        position: relative;
+        width: 100%;
+        height: 85vh; // default height
+        overflow: hidden;
+
+        video {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 100vw;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bs-breakpoint-sm) {
+  .home {
+    min-height: 45vh;
+
+    .hero {
+      .hero-container {
+        position: inherit;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

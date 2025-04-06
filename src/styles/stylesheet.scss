@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+$bs-breakpoint-xs: 280px;
+$bs-breakpoint-sm: 576px;
+$bs-breakpoint-md: 768px;
+$bs-breakpoint-lg: 992px;
+$bs-breakpoint-xl: 1200px;
+$bs-breakpoint-xxl: 1400px;
+
+$color-white: rgba(255, 255, 255, 0.4);
+$color-lightbrown: #3d2c2a;
+$color-darkbrown: #2c2423;
+
+html {
+  scroll-behavior: smooth;
+  background-color: #3d2c2a;
+  color: white;
+}
+
+.marginals {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin marginals {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  justify-content: center;
+}
+
+p {
+  font-weight: 200;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  margin: 8px 0 12px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.2em;
+  font-family: "Red Hat Display", sans-serif;
+  border-radius: 25px;
+  box-shadow: 0 14px 16px #00000033;
+
+  &:hover {
+    font-weight: 600;
+    transition: 0.1s all linear;
+    transform: scale(1.02);
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.btn-primary {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: $color-darkbrown;
+  border: 2px solid #312524;
+
+  &:hover {
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+.btn-secondary {
+  color: $color-darkbrown;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #281d1b;
+
+  &:hover {
+    border: 2px solid $color-lightbrown;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &:hover {
+    .link {
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .link {
+    display: flex;
+    padding: 3px;
+
+    &:hover {
+      color: $color-white;
+      transform: scale(1.05);
+      transition: all 0.15s linear;
+    }
+  }
+}

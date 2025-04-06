@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+@import "stylesheet.scss";
+
+.about {
+  text-align: center;
+  color: white;
+
+  section {
+    // margin: 50px 0 100px;
+  }
+
+  .section-1 {
+    img {
+      width: 100%;
+      // padding: 15px 0;
+      // max-width: 650px;
+    }
+  }
+
+  .section-2 {
+    margin: 50px 0 100px;
+
+    .article-card {
+      display: flex;
+      text-align: left;
+      width: 100%;
+      padding: 15px 20px;
+      color: #dbdbdb;
+      background-color: $color-darkbrown;
+      border: 1px solid #2c242366;
+      box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: all 0.5s;
+      box-shadow: 0 14px 16px #00000033;
+      margin: 15px 0;
+
+      &:hover {
+        border: 2px solid $color-lightbrown;
+        transform: scale(1.03);
+
+        .link {
+          font-weight: 400;
+          color: white;
+          transition: all 0.3s;
+        }
+      }
+
+      &:active {
+        // transform: scale(0.8) rotateZ(1deg);
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 15px;
+        // align-items: center;
+      }
+
+      .image {
+        width: 250px;
+        // object-fit: fill;
+        // padding: 15px 0;
+        // max-width: 650px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin: 8px 0;
+      }
+
+      .title {
+        font-family: "Newsreader", serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+
+      .snippet {
+        font-weight: 400;
+      }
+
+      .meta {
+        font-size: 0.8rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+@media (max-width: $bs-breakpoint-md) {
+  .about {
+    .section-2 {
+      .article-card {
+        .image {
+          width: 100%;
+        }
+        .content {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

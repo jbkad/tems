@@ -1,0 +1,136 @@
+@import "stylesheet.scss";
+
+.nav-scrolled {
+  display: none;
+  // width: 0;
+  transition: display 0.4s linear;
+  // background-color: $color-darkbrown;
+  // box-shadow: 0 14px 16px rgba(0, 0, 0, 0.15);
+  // padding: 10px 0;
+  // transition: 0.4s all linear;
+
+  // .section-1 {
+  //   .heading,
+  //   h1 {
+  //     font-size: 16px;
+  //     transition: font-size 0.4s ease-in-out;
+  //   }
+  // }
+
+  // .section-3 {
+  //   svg {
+  //     height: 16px;
+  //     width: 16px;
+  //     transition: height 0.4s ease-in-out, width 0.4s ease-in-out;
+  //   }
+  // }
+}
+
+.navbar {
+  // position: fixed;
+  // top: 0;
+  // height: fit-content;
+  width: 100%;
+  padding: 15px 0;
+  // background-color: $color-darkbrown;
+  // background-color: #090a04;
+  // filter: blur(5px);
+  // opacity: 0.3;
+  text-align: center;
+  align-items: center;
+  z-index: 999;
+
+  .container {
+    // text-align: center;
+
+    .section-1 {
+      // align-items: center;
+      .heading,
+      h1 {
+        // font-size: 16px;
+        font-weight: 900;
+        margin: 0 15px;
+        text-transform: uppercase;
+        // color: white;
+
+        &:hover {
+          transform: scale(1.08);
+          transition: 0.15s all linear;
+        }
+      }
+    }
+
+    .section-2 {
+      // display: flex;
+      // gap: 15px;
+      // justify-content: space-between;
+      // display: flex;
+      // text-align: center;
+
+      // .menu-item,
+      // a {
+      // display: inline-flex;
+      // flex-direction: row;
+      // text-align: center;
+
+      margin: 0 8px;
+      font-weight: 200;
+      color: $color-white;
+
+      .container {
+        display: inline-flex;
+        text-align: center;
+        // margin: 0 8px;
+      }
+
+      &:hover {
+        .menu-item,
+        a {
+          cursor: pointer;
+          color: white;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .menu-item,
+      a {
+        display: flex;
+        margin: 0 5px;
+        // padding: 3px;
+
+        &:hover {
+          color: $color-white;
+          transform: scale(1.05);
+          transition: all 0.1s linear;
+        }
+        // }
+
+        // margin: 0 8px;
+        // font-weight: 200;
+        // color: $color-white;
+
+        // &:hover {
+        //   color: white;
+        //   font-weight: 600;
+        //   transition: 0.3s all linear;
+        // }
+      }
+    }
+
+    .section-3 {
+      .social-links {
+        color: $color-white;
+
+        svg {
+          // height: 16px;
+        }
+
+        // &:hover {
+        //   .link {
+        //     color: white;
+        //   }
+        // }
+      }
+    }
+  }
+}
