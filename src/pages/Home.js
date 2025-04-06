@@ -9,7 +9,7 @@ function Home() {
       <section className="hero">
         <div className="hero-container">
           <video
-          className="desktop"
+          className="hero-video desktop"
             src={require("../assets/videos/hero_desktop.mp4")}
             alt="Love Me Jeje Visualiser"
             autoPlay
@@ -18,7 +18,7 @@ function Home() {
             playsInline
           />
           <video
-          className="mobile"
+          className="hero-video mobile"
             src={require("../assets/videos/hero_mobile.mp4")}
             alt="Love Me Jeje Visualiser"
             autoPlay
