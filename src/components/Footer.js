@@ -14,17 +14,6 @@ function Footer() {
   return (
     <div className="footer">
       <div className="container">
-        <section className="newsletter">
-          {/* <label className="label-newsletter">Wanna hear more?</label> */}
-          <a
-            className="btn btn-primary btn-newsletter"
-            id="subscribe"
-            href="https://forms.sonymusicfans.com/campaign/since93_tems_sign_up_2021/"
-            target="blank"
-          >
-            Sign up to the newsletter
-          </a>
-        </section>
         <section>
           <SocialLinks />
         </section>
