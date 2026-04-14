@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router";
 import { Home } from "./pages/Home";
 import { Navbar } from "./components/Navbar";
@@ -11,6 +12,12 @@ import "./styles/stylesheet.scss";
 function App() {
   const location = useLocation();
   const removeNav = location.pathname === "/";
+
+  useEffect(() => {
+    if (location.pathname === "/tour" || location.pathname === "/videos") {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, [location.pathname]);
 
   return (
     <div className="app">

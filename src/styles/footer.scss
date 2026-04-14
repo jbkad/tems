@@ -1,69 +1,52 @@
 @import "../styles/stylesheet.scss";
 
-$color-white: rgba(255, 255, 255, 0.682);
-
 .footer {
-  font-size: 0.8rem;
-  color: $color-white;
-  margin: 15px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.45);
+  padding: 32px 0 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin: 0 24px;
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0 15px;
+    gap: 0 16px;
 
-    section {
-      margin: 5px 0;
-    }
+    a {
+      position: relative;
+      color: rgba(255, 255, 255, 0.45);
+      letter-spacing: 0.5px;
+      transition: color 0.2s ease;
 
-    .newsletter {
-      text-align: center;
-
-      .label-newsletter {
-        display: block;
+      &:hover {
+        color: rgba(255, 255, 255, 0.8);
       }
     }
+  }
 
-    .section-2 {
-      display: flex;
+  .section-3 {
+    letter-spacing: 0.3px;
+  }
 
-      a {
-        position: relative;
-        margin: 0 10px 0 0;
-        color: $color-white;
-        transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
-      }
+  .section-4 {
+    margin-top: 4px;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
 
-      a::before {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        height: 1px;
-        width: 100%;
-        background-color: $color-white;
-        transform-origin: right top;
-        transform: scale(0, 1);
-        transition: color 0.1s, transform 0.2s ease-out;
-      }
-
-      a:active::before {
-        background-color: $color-white;
-      }
-
-      a:hover::before,
-      a:focus::before {
-        transform-origin: left top;
-        transform: scale(1, 1);
-      }
-    }
-
-    .section-3 {
-      color: rgba(255, 255, 255, 0.682);
+    &:hover {
+      opacity: 0.7;
     }
   }
 }
@@ -71,13 +54,9 @@ $color-white: rgba(255, 255, 255, 0.682);
 @media (max-width: $bs-breakpoint-md) {
   .footer {
     .section-2 {
-      display: flex;
       flex-direction: column;
       align-items: center;
-
-      a {
-        width: fit-content;
-      }
+      gap: 6px;
     }
   }
 }

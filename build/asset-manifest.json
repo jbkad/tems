@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1dbb99e8.css",
+    "main.js": "/static/js/main.0a2c6343.js",
+    "static/js/453.58cbf062.chunk.js": "/static/js/453.58cbf062.chunk.js",
+    "static/media/hero_mobile.mp4": "/static/media/hero_mobile.75cffdd17daeb75be967.mp4",
+    "static/media/hero_desktop.mp4": "/static/media/hero_desktop.55c7720a5d0424331abd.mp4",
+    "static/media/tems.webp": "/static/media/tems.658ae2da1ff023fb4778.webp",
+    "static/media/born-in-the-wild.webp": "/static/media/born-in-the-wild.c4785f9c25e0c0e89b1a.webp",
+    "static/media/if-orange-was-a-place.webp": "/static/media/if-orange-was-a-place.45345792077f7009d82c.webp",
+    "static/media/for-broken-ears.webp": "/static/media/for-broken-ears.b91704e0b960d48e367b.webp",
+    "index.html": "/index.html",
+    "main.1dbb99e8.css.map": "/static/css/main.1dbb99e8.css.map",
+    "main.0a2c6343.js.map": "/static/js/main.0a2c6343.js.map",
+    "453.58cbf062.chunk.js.map": "/static/js/453.58cbf062.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1dbb99e8.css",
+    "static/js/main.0a2c6343.js"
+  ]
+}

@@ -1,0 +1,111 @@
+@import "stylesheet.scss";
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 6, 6, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-panel {
+  position: relative;
+  width: 90vw;
+  max-width: 860px;
+  max-height: 88vh;
+  overflow-y: auto;
+  background: $color-darkbrown;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 60px 30px 40px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+  animation: slideUp 0.3s ease;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+
+  &.music-modal {
+    max-width: 400px;
+    padding: 48px 36px 40px;
+
+    .modal-label {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.35);
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    .stream-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      li a {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 16px;
+        border-radius: 6px;
+        color: rgba(255, 255, 255, 0.65);
+        transition: background 0.2s ease, color 0.2s ease;
+
+        svg {
+          flex-shrink: 0;
+          stroke: currentColor;
+          stroke-width: 1;
+        }
+
+        .stream-name {
+          font-size: 0.9rem;
+          font-weight: 300;
+          letter-spacing: 0.5px;
+        }
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.06);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  transition: color 0.2s ease;
+  font-family: inherit;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
